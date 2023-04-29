@@ -1,0 +1,196 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+  margin: 8rem 0;
+  height: 100%;
+}
+.main__section1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+  width: 100%;
+}
+.main__section1 > p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 2rem;
+  color: #e4e5ea;
+}
+.section1__container > h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #e4e5ea;
+}
+.section1__container_welbex {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.main__section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+.main__section2 > h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #e4e5ea;
+}
+.main__section2 > h1 > span {
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.section2__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.grid__item-h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #e4e5ea;
+}
+.grid__item > p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #e4e5ea;
+}
+.grid__item-mobile {
+  display: none;
+}
+.section2__btn {
+  width: 262px;
+  height: 61px;
+  background: #4077f3;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #e4e5ea;
+  margin-top: 4rem;
+  margin-left: auto;
+  border: none;
+}
+.section2__btn:hover {
+  color: #ababac;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0 15px;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .main__section1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__section1 > p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 2rem;
+    color: #e4e5ea;
+  }
+  .section1__container > h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .section1__container_welbex {
+  }
+  .main__section2 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+  .main__section2 > h1 {
+    text-align: left;
+  }
+  .main__section2 > h1 > span {
+    background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .section2__grid {
+    display: grid;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  .grid__item-h1 {
+    display: none;
+  }
+  .grid__item > p {
+    display: none;
+  }
+  .grid__item-mobile {
+    display: inline;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #e4e5ea;
+  }
+  .grid__item-mobile::before {
+    content: '-';
+    width: 10px;
+    height: 0px;
+    left: 0px;
+    top: 8px;
+    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .section2__btn {
+    display: none;
+  }
+}
